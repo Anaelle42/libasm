@@ -20,7 +20,8 @@ BONUS_DIR = bonus
 BONUS_SRCS =	ft_list_size.asm \
 				ft_list_push_front.asm \
 				ft_list_sort.asm \
-				ft_list_remove_if.asm
+				ft_list_remove_if.asm \
+				ft_atoi_base.asm
 
 OBJS = $(addprefix $(SRCS_DIR)/,$(SRCS:.asm=.o))
 BONUS_OBJS = $(addprefix $(BONUS_DIR)/,$(BONUS_SRCS:.asm=.o))

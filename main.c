@@ -175,5 +175,21 @@ int	main(void)
 	print_list(remove_list, 's');
 	#pragma GCC diagnostic pop
 
+	printf("\n--- ft_atoi_base ---\n");
+
+	printf("%i\n", ft_atoi_base("123", "0123456789"));
+    printf("%i\n", ft_atoi_base("---123", "0123456789"));
+    printf("%i\n", ft_atoi_base("   +500     ", "0123456789"));
+
+	printf("%i\n", ft_atoi_base("7B", "0123456789ABCDEF"));
+    printf("%i\n", ft_atoi_base("-FF", "0123456789ABCDEF"));
+
+    printf("\nInvalid base:\n");
+    printf("%i\n", ft_atoi_base("123", ""));
+    printf("%i\n", ft_atoi_base("123", "1"));
+    printf("%i\n", ft_atoi_base("0", "00"));
+    printf("%i\n", ft_atoi_base("123", "0+1"));
+    printf("%i\n", ft_atoi_base("123", "0 1"));
+
 	return (0);
 }
